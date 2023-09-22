@@ -24,6 +24,10 @@ sb install sandbox-calibre
 
 - The username is `abc` . The configured password is taken from your Saltbox [`accounts.yml`](../../saltbox/install/install.md#configuration) file located in `/srv/git/saltbox/accounts.yml`
 
+- On the "calibre Welcome wizard" screen, navigate to your /library directory and hit "Next"
+
+- If you plan on sending books to an e-book device, setup your device on this screen and hit "Next", then setup your Kindle email and SMTP settings and hit "Next", finally hit "Finish"
+
 - Calibre is ready for use. If you added your pre-existing Calibre library to /mnt/local/Media/Books then you should see your library is ready to go. If not, then you have a blank library ready for you to fill.
 
 !!! info
@@ -33,7 +37,9 @@ sb install sandbox-calibre
 
     Both Calibre and Calibre-Web expect to find your library in `/mnt/unionfs/Media/Books`. Note that per standard Saltbox setup, `/mnt/local` is included inside `/mnt/unionfs`. However, both dockers also include access to anything in your `/mnt` directory.
 
-### 4. Handy commands for managing your calibre docker
+### 4. Configuring Calibre to work with Readarr
+
+### 5. Handy commands for managing your calibre docker
 
 You can access advanced features of the Guacamole remote desktop using ctrl+alt+shift enabling you to use remote copy/paste and different languages.
 
